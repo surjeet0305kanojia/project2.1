@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: aquamarine;
+            }
+        .subhead{
+            font-family:"Nepxfont-weight:bold;ton", sans-serif;
+            font: size 10px;
+            font-weight:  bold;
+            color: rgb(1, 1, 1);
+        }
+        .box{
+            background-color: rgb(213, 218, 218);
+            border-color: black;
+            border-radius: 10px;
+        }
+        .inp{
+            font-size: large;
+            font-family:amento, cursive ;
+            color: rgb(53, 53, 187);
+        }
+        .a:hover{border: 2px;
+        border-color: antiquewhite;
+        border-radius: 20px;
+        background-color: blue;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+         font-size: 15px;
+         margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        }
+        .b:hover{
+            border: 2px;
+            border-color: whitesmoke;
+            border-radius: 20px;
+            color: black;
+            background-color: red;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+             display: inline-block;
+                font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+        }
+        #m{
+            font-size: 20px;
+            font-weight:bold; font-family :ria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:red ;
+        }
+        .logo{
+            height: 63px; width: 66px;
+            border: 2px;
+            border-radius: 50%;
+            animation: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        
+    <nav><img class="logo" src="pp.jpg" alt="img" style="float:left;"><img class="logo" style="float: right;" src="pp1.jpg" alt="img2" style=""></nav>
+    
+    <center>
+        <h1>Student Registration form</h1>
+    <marquee id="m" direction="center">Website is under maintance. Keep visiting this site for further updates.</marquee>
+    <h2 class="subhead">Personal details</h2> </center>
+    <fieldset class="box"> 
+     <p style="font-weight:bold;">Name: <input class="inp" type="text" required> </p> 
+    </fieldset> 
+    <fieldset class="box"> 
+        <p style="font-weight:bold;">Father’s name: <input class="inp" type="text"></p> 
+    </fieldset>
+     <fieldset class="box">
+        <p style="font-weight:bold;">Mother's name: <input class="inp" type="text"> </p>
+    </fieldset> 
+    <fieldset class="box"> 
+     <p style="font-weight:bold;">Gender: </p>
+     <input type="radio" id="male" name="Gender" value="male";">
+  <label for="male">Male </label><br>  
+   <input type="radio" id="female" name="Gender" value="female">
+   <label for="female">Female</label> 
+    </fieldset> 
+    <fieldset class="box"> 
+     <p style="font-weight:bold;">Date of birth : <input type="date"></p> 
+    </fieldset> 
+    <fieldset class="box"> 
+     <p style="font-weight:bold;">Mobile number:<input class="inp" type="number"> </p>
+     <p style="font-weight:bold;">Email Address :<input class="inp" type="email"></p>
+    </fieldset> 
+    <fieldset class="box"> 
+     <p style="font-weight:bold;">Address:</p>
+         <p style="font-weight:bold;"> House no./street/gali no.  : <input class="inp" type="text" ></input> &nbsp;&nbsp;  
+             Town/Village : <input class="inp" type="text"></input><br><br>  
+             City : <input class="inp" type="text"></input> &nbsp;
+             State/Province  : <input class="inp" type="text"></input><br><br>  
+            Country : <input class="inp" type="text"></input>&nbsp;&nbsp;
+            Pin code/Postal code : <input class="inp" type="number"></input>
+        </p>
+    </fieldset>
+    <center> 
+    <h2 class="subhead">Academic  Details</h2> </center>
+    <fieldset class="box"> 
+     <p style="font-weight:bold;"> Heighest Qualification
+         <select > 
+            <option >----select----</option>
+            <option >10th</option> 
+            <option> 12th</option>
+            <option> Graduation</option>
+            <option >Post Graduation</option>
+            <option>Research scholor</option>
+            
+            </select> </p> 
+    </fieldset> 
+
+    <fieldset class="box"> 
+        <p style="font-weight:bold;">Total Marks : <input class="inp" type="number"></input></p> 
+        <p style="font-weight:bold;">Percentage : <input class="inp" type="number"></input></p>
+        <p style="font-weight:bold;">Marks Obtained :<input class="inp" type="number"></input></p>
+    </fieldset>
+    <fieldset class="box">
+    <p style="font-weight:bold;"> Academic Achievements:
+    <textarea class="inp" rows="5" cols="90"></textarea></p>  
+    </fieldset>  
+    <center> 
+        <h2 class="subhead">Upload Documents</h2>
+    <fieldset class="box">
+        <label for="image">Image :</label>
+        <input type="file" id="image" ></input>
+    </fieldset>
+    <fieldset class="box">
+        <label for="sign">Signature :</label>
+        <input type="file" name="sign" id="sign">
+    </fieldset>
+    <fieldset class="box">
+        <label for="marksheet">Marksheet :</label>
+        <input type="file" name="marksheet" id="marksheet">
+    </fieldset class="box">  
+    <fieldset class="box">
+        <label for="Adhaar Card">Adhaar Card :</label>
+        <input type="file" name="Adhaar Card" id="Adhaar Card">
+    </fieldset>  
+    <p> <input class="a" type="button" value="Submit"> <input class="b" type="reset" value="Reset Form"> </p>  </form>
+    <nav>
+        <a target="blank" href="https://google.in/" alt="HOME"> HOME &nbsp;&nbsp;&nbsp;</a>
+        <a target="blank" href="https://instagram.com/surjeetkkanojia/" alt="INSTAGRAM" > INSTAGRAM &nbsp;&nbsp;&nbsp;
+            <img src="ig logo.png" height="25" width="25" style="float: none;"> </a>
+            <a  target="_blank" href="https://github.com/surjeet0305kanojia" alt="Github" "> GITHUB &nbsp;&nbsp;&nbsp;
+            <img src="github-logo.png" height="25" width="25"></a>
+        <a target="_blank"  href="https://linkedin.com/in/surjeet-kanojia-87b1061b9/" alt="linkedin" > LinkedIn&nbsp;&nbsp;&nbsp;
+            <img src="linkedin-logo.png" height="25" width="25">&nbsp;&nbsp;   </a>
+            <a href="https://google.in/" target="_blank">FAQ</a>
+
+    </nav>
+    
+    
+</body>
+</html>
